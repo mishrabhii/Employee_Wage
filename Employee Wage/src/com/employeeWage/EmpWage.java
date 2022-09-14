@@ -7,16 +7,17 @@ public class EmpWage {
 
 		int full_Time = 1;
 		double EmpCheck = Math.floor(Math.random()*10)%2;
-	
+
 		double WagePerHour = 20;
-		double FullDayHours = 8;
-		double DailyEmployeeWage = WagePerHour*FullDayHours;
-		if (EmpCheck == full_Time)
-			System.out.println(" Employee is Present and Daily Employee Wage = " +DailyEmployeeWage);
+		double PartTimeHours=8;
+		double PartTimeWork = PartTimeHours*WagePerHour;
+		if (EmpCheck == full_Time) 
+			System.out.println("Employee Worked Part Time and Wage is = " +PartTimeWork);
 		else
 			System.out.println("Employee is absent");
-	}
-
+	}			
 }
+
+
 
 
